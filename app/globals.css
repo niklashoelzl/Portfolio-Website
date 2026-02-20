@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717f1;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #171717f1;
     --foreground: #ededed;
   }
 }
@@ -23,4 +23,47 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   Custom Styles
+   ========================== */
+
+@keyframes shimmer-text {
+  0%   { background-position:  200% center; }
+  100% { background-position:  -200% center; }
+}
+
+.animate-text {
+ background: linear-gradient(
+    90deg,
+    #60a5fa 0%,       /* deine Textfarbe */
+    #ffffff 50%,       /* heller Glanz */
+    #60a5fa 100%      /* deine Textfarbe */
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-text 3s linear infinite;
+}
+
+.nav-glow-base {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-glow {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+
+/* ==========================
+   Smooth Scrolling
+   ========================== */
+
+html {
+  scroll-behavior: smooth;
 }
