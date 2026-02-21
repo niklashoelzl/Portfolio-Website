@@ -44,7 +44,7 @@ export function ContactSection() {
                     <div>
                         <h2 className="text-5xl font-bold text-white mb-4">Let's <span className="text-blue-500">Talk</span></h2>
                         <p className="text-gray-400 leading-relaxed">
-                            Have a project in mind or just want to say hi? Feel free to reach out — I'll get back to you as soon as possible.
+                            Have a project in mind or just want to say hi? Feel free to reach out - I'll get back to you as soon as possible.
                         </p>
                     </div>
 

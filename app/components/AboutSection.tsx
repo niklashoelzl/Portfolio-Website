@@ -12,7 +12,7 @@ export function AboutSection() {
                     <div>
                         <h2 className="text-5xl font-bold text-white mb-4">About <span className="text-blue-500">Me</span></h2>
                         <p className="text-gray-400 leading-relaxed">
-                            Hey, i'm Niklas — from Stralsund, Germany.
+                            Hey, i'm Niklas - from Stralsund, Germany.
                         </p>
                     </div>
 
@@ -20,7 +20,7 @@ export function AboutSection() {
                     <div>
                         <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-3">What drives me</h3>
                         <p className="text-gray-400 leading-relaxed text-sm">
-                            Placeholder
+                            I want to understand how things work, and use that understanding to build better products and solve real-world problems. 
                         </p>
                     </div>
 
@@ -35,7 +35,7 @@ export function AboutSection() {
                                 <span>
                                     Student @{" "}
                                     <a href="https://www.hochschule-stralsund.de" target="_blank" className="underline hover:text-white transition-colors duration-200">
-                                        Hochschule Stralsund
+                                        University of Applied Sciences Stralsund
                                     </a>
                                 </span>
                                 <span>Software Development and Artificial Intelligence (B.Sc.)</span>
@@ -58,7 +58,7 @@ export function AboutSection() {
                             </div>
                             <span className="text-green-400 font-medium">Open for work</span>
                         </div>
-
+                        
                     </div>
                 </div>
 

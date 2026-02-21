@@ -37,9 +37,9 @@ body {
 .animate-text {
  background: linear-gradient(
     90deg,
-    #60a5fa 0%,       /* deine Textfarbe */
-    #ffffff 50%,       /* heller Glanz */
-    #60a5fa 100%      /* deine Textfarbe */
+    #60a5fa 0%,
+    #ffffff 50%,
+    #60a5fa 100%
   );
   background-size: 200% auto;
   background-clip: text;
