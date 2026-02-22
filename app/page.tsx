@@ -2,7 +2,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HeroSection } from './components/HeroSection';
 import { Projects } from './components/Projects';
-import { AboutSection } from './components/AboutSection';
+import { SkillsSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 
 export default function Portfolio() {
@@ -17,7 +17,7 @@ export default function Portfolio() {
         <Projects />
 
       {/* === About Section === */}
-      <AboutSection />
+      <SkillsSection />
 
       {/* === Contact Section === */}
       <ContactSection />
