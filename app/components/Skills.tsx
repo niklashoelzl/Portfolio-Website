@@ -10,9 +10,9 @@ const categories = [
         ring:       "rgba(59,130,246,0.25)",
         labelColor: "text-blue-400",
         skills: [
-            { icon: <SiNextdotjs size={18} />,   label: "Next.js",    color: "text-white"      },
-            { icon: <SiTypescript size={18} />,   label: "TypeScript", color: "text-[#3178C6]"  },
-            { icon: <SiTailwindcss size={18} />,  label: "Tailwind",   color: "text-[#38BDF8]"  },
+            { icon: <SiNextdotjs size={18} />,      label: "Next.js",       color: "text-white"      },
+            { icon: <SiTypescript size={18} />,     label: "TypeScript",    color: "text-[#3178C6]"  },
+            { icon: <SiTailwindcss size={18} />,    label: "Tailwind",      color: "text-[#38BDF8]"  },
         ],
     },
     {
@@ -91,7 +91,7 @@ function CategoryCard({ cat }: { cat: typeof categories[number] }) {
 /* === Skills Section === */
 export function SkillsSection() {
     return (
-        <section id="About" aria-label="Skills" className="min-h-screen bg-[radial-gradient(circle_at_20%_20%,#1f2937_20%,#000000_100%,transparent_80%)] flex flex-col items-center justify-center px-8 sm:px-16 py-24 relative overflow-hidden">
+        <section id="Skills" aria-label="Skills" className="min-h-screen bg-[radial-gradient(circle_at_20%_20%,#1f2937_20%,#000000_100%,transparent_80%)] flex flex-col items-center justify-center px-8 sm:px-16 py-24 relative overflow-hidden">
             {/* Ambient blobs */}
             <div className="absolute top-20 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-violet-500/10 rounded-full blur-[100px] pointer-events-none" />

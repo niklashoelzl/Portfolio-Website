@@ -17,10 +17,10 @@ function NavItem({ href, label, activeSection, onClick }: { href: string; label:
 }
 
 const NAV_LINKS = [
-    { href: "#Home",    label: "Home"    },
-    { href: "#Projects", label: "Projects" },
-    { href: "#About",   label: "About"   },
-    { href: "#Contact", label: "Contact" },
+    { href: "#Home",        label: "Home"    },
+    { href: "#Projects",    label: "Projects" },
+    { href: "#Skills",      label: "Skills"   },
+    { href: "#Contact",     label: "Contact" },
 ];
 
 export function Navbar() {
@@ -69,7 +69,7 @@ export function Navbar() {
 
     return (
         <>
-            <nav aria-label="Hauptnavigation" className={`w-full sticky top-0 z-50 bg-[#1f2937] backdrop-blur-md nav-glow-base transition-transform duration-300 ${showNav ? "translate-y-0" : "-translate-y-full"} ${scrolled ? "nav-glow" : ""}`}>
+            <nav aria-label="Main-navigation" className={`w-full sticky top-0 z-50 bg-[#1f2937] backdrop-blur-md nav-glow-base transition-transform duration-300 ${showNav ? "translate-y-0" : "-translate-y-full"} ${scrolled ? "nav-glow" : ""}`}>
                 <div className="lg:px-8 max-w-7xl mx-auto px-4 sm:px-6">
                     <div className="flex h-21 justify-between items-center">
 

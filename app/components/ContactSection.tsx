@@ -2,15 +2,16 @@
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { ImSpinner8 } from "react-icons/im";
+import { SiLeetcode } from "react-icons/si";
 
 const socialLinks = [
-    { icon: <FaGithub size={18} />,    href: "https://github.com/",    label: "GitHub"    },
-    { icon: <FaLinkedin size={18} />,  href: "https://linkedin.com/",  label: "LinkedIn"  },
-    { icon: <FaTwitter size={18} />,   href: "https://twitter.com/",   label: "Twitter"   },
-    { icon: <FaInstagram size={18} />, href: "https://instagram.com/", label: "Instagram" },
+    { icon: <FaGithub size={18} />,     href: "https://github.com/",        label: "GitHub"    },
+    { icon: <FaLinkedin size={18} />,   href: "https://linkedin.com/",      label: "LinkedIn"  },
+    { icon: <SiLeetcode size={18} />,   href: "https://leetcode.com/",      label: "LeetCode"   },
+    { icon: <FaInstagram size={18} />,  href: "https://instagram.com/",     label: "Instagram" },
 ];
 
 const EMAILJS_SERVICE_ID  = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;

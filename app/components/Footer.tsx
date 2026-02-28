@@ -1,21 +1,22 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
+import { SiLeetcode } from "react-icons/si";
 
 /* === Shared Social Links === */
 const socialLinks = [
-    { icon: <FaGithub size={20} />,    href: "https://github.com/",    label: "GitHub"    },
-    { icon: <FaLinkedin size={20} />,  href: "https://linkedin.com/",  label: "LinkedIn"  },
-    { icon: <FaTwitter size={20} />,   href: "https://twitter.com/",   label: "Twitter"   },
-    { icon: <FaInstagram size={20} />, href: "https://instagram.com/", label: "Instagram" },
-    { icon: <MdEmail size={20} />,     href: "mailto:niklashoelzl00@gmail.com", label: "Email" },
+    { icon: <FaGithub size={20} />,     href: "https://github.com/",                label: "GitHub"    },
+    { icon: <FaLinkedin size={20} />,   href: "https://linkedin.com/",              label: "LinkedIn"  },
+    { icon: <SiLeetcode size={20} />,   href: "https://leetcode.com/",              label: "LeetCode"   },
+    { icon: <FaInstagram size={20} />,  href: "https://instagram.com/",             label: "Instagram" },
+    { icon: <MdEmail size={20} />,      href: "mailto:niklashoelzl00@gmail.com",    label: "Email" },
 ];
 
 const navLinks = [
-    { href: "#Home",     label: "Home"     },
-    { href: "#Projects", label: "Projects" },
-    { href: "#About",    label: "About"    },
-    { href: "#Contact",  label: "Contact"  },
+    { href: "#Home",        label: "Home"     },
+    { href: "#Projects",    label: "Projects" },
+    { href: "#Skills",      label: "Skills"    },
+    { href: "#Contact",     label: "Contact"  },
 ];
 
 export function Footer() {
