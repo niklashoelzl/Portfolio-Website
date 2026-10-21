@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Niklas Hölzl - Portfolio
+
+Personal portfolio website built with **Next.js 15** and **TypeScript**. Currently in development - not yet deployed.
+
+---
+
+## Sections
+
+| Section | Status |
+|---|---|
+| Navbar — sticky, scroll-hide, active-section highlighting, mobile menu | ✅ Done |
+| Hero — intro, "Open to Work" badge, profile image | ✅ Done |
+| Projects — card grid with GitHub links, live demo & download support | ❌​ 1 of 3 projects filled |
+| Skills — categorized tech stack (Frontend, Backend, AI & Data, Tools) | ❌​ AI & Data section empty |
+| Contact — EmailJS form with validation & status feedback | ✅ Done |
+| Footer — navigation, social links, location | ✅ Done |
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Email:** EmailJS
+- **Icons:** react-icons
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # Production build
+npm run lint    # ESLint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env.local` file in the root directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can get these from [emailjs.com](https://www.emailjs.com/).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+app/
+├── components/
+│   ├── Navbar.tsx
+│   ├── HeroSection.tsx
+│   ├── Projects.tsx
+│   ├── Skills.tsx
+│   ├── ContactSection.tsx
+│   ├── DownloadButton.tsx
+│   └── Footer.tsx
+├── globals.css
+├── layout.tsx
+└── page.tsx
+public/
+└── Placeholder.png
+```
+
+---
+
+## Author
+
+**Niklas Hölzl** - Student, B.Sc. Software Development & AI, Hochschule Stralsund
